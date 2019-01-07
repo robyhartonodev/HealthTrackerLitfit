@@ -9,7 +9,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 public class MainActivity extends AppCompatActivity {
+
+    private WelcomeHelper welcomeHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        // Show OnBoardingActivity
+        welcomeHelper = new WelcomeHelper(this, OnBoardingActivity.class);
+        welcomeHelper.show(savedInstanceState);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        welcomeHelper.onSaveInstanceState(outState);
     }
 
     @Override
@@ -45,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if(id==R.id.action_welcome){
+            welcomeHelper.forceShow();
         }
 
         return super.onOptionsItemSelected(item);
