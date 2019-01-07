@@ -1,5 +1,9 @@
 This file contains every single used open source components/libraries/dependencies
 
-weight-solid - https://fontawesome.com/icons/weight?style=solid
-https://fontawesome.com/license
-https://creativecommons.org/licenses/by/4.0/
+ICONS
+
+1. weight - https://www.iconfinder.com/icons/3872561/health_medical_weight_management_icon 
+http://creativecommons.org/licenses/by/3.0/
+https://www.iconfinder.com/Wall_Studio
+
+2. burn - free no attribution required
