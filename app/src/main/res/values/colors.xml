@@ -10,5 +10,11 @@
     <color name="primaryDarkColor">#ba000d</color>
     <color name="primaryTextColor">#000000</color>
 
-    
+    <color name="red50">#ffebee</color>
+    <color name="red100">#ffcdd2</color>
+    <color name="red200">#ef9a9a</color>
+    <color name="red300">#e57373</color>
+    <color name="red400">#ef5350</color>
+
+
 </resources>

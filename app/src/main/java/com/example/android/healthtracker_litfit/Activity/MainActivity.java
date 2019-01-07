@@ -1,4 +1,4 @@
-package com.example.android.healthtracker_litfit;
+package com.example.android.healthtracker_litfit.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.android.healthtracker_litfit.R;
 import com.stephentuso.welcome.WelcomeHelper;
 
 public class MainActivity extends AppCompatActivity {
