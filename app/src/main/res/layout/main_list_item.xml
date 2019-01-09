@@ -5,8 +5,6 @@
     android:id="@+id/cardview_mainitem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:paddingBottom="32dp"
     app:ignore="NamespaceTypo"
     card_view:cardCornerRadius="6dp"
     card_view:cardElevation="3dp"
