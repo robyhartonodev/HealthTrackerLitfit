@@ -8,7 +8,9 @@ https://www.iconfinder.com/Wall_Studio
 
 2. burn - free no attribution required
 
-3. water - https://www.flaticon.com/authors/plainicon
+3. water - https://www.flaticon.com/free-icon/bed_632339#term=sleep&page=1&position=2
+https://www.flaticon.com/authors/plainicon
 
-4.
+4. sleep - https://www.flaticon.com/free-icon/bed_632339#term=sleep&page=1&position=2
+https://www.flaticon.com/authors/cursor-creative
 
