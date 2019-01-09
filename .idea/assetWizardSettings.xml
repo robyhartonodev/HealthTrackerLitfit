@@ -3,11 +3,6 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
-        <entry key="imageWizard">
-          <value>
-            <PersistentState />
-          </value>
-        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -16,29 +11,13 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
-                        <option name="children">
-                          <map>
-                            <entry key="clipartAsset">
-                              <value>
-                                <PersistentState>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_healing_black_24dp.xml" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="color" value="ffffff" />
                             <entry key="height" value="256" />
-                            <entry key="outputName" value="ic_weight" />
+                            <entry key="outputName" value="ic_food" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\krappa\Downloads\iconfinder_Artboard_14_3872561.svg" />
+                            <entry key="sourceFile" value="C:\Users\krappa\Downloads\dinner.svg" />
                             <entry key="width" value="256" />
                           </map>
                         </option>
