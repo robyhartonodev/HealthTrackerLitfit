@@ -14,3 +14,9 @@ https://www.flaticon.com/authors/plainicon
 4. sleep - https://www.flaticon.com/free-icon/bed_632339#term=sleep&page=1&position=2
 https://www.flaticon.com/authors/cursor-creative
 
+5. heartbeat - https://www.flaticon.com/free-icon/heartbeat_210521#term=heartbeat&page=1&position=3
+https://www.flaticon.com/authors/pixel-buddha
+
+6. Plate - https://www.flaticon.com/free-icon/dinner_113227#term=plate&page=1&position=21
+https://www.freepik.com/
+
