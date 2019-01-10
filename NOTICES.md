@@ -20,3 +20,9 @@ https://www.flaticon.com/authors/pixel-buddha
 6. Plate - https://www.flaticon.com/free-icon/dinner_113227#term=plate&page=1&position=21
 https://www.freepik.com/
 
+DEPEDENCIES 
+
+1. Picasso
+
+2. MaterialEditText - https://github.com/rengwuxian/MaterialEditText
+
