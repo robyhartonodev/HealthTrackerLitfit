@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.CollectDataActivity"
+    tools:showIn="@layout/activity_collect_data">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_person"
+                app:met_primaryColor="@color/primaryColor" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edittext_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_name"
+                android:focusable="false"
+                android:hint="Birth Date"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_date"
+                app:met_primaryColor="@color/primaryColor" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

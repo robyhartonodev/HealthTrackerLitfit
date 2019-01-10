@@ -27,6 +27,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Activity.CollectDataActivity"
+            android:label="@string/title_activity_collect_data"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

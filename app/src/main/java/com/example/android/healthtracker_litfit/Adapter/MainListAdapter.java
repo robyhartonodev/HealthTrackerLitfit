@@ -1,10 +1,10 @@
 package com.example.android.healthtracker_litfit.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,7 +51,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(0).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red50));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red100));
                 break;
             // Calorie
             case 1:
@@ -62,7 +62,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(1).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red100));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red200));
                 break;
             case 2:
                 // Set Image
@@ -72,7 +72,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(2).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red200));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red300));
                 break;
             case 3:
                 // Set Image
@@ -82,7 +82,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(3).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red300));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red400));
                 break;
             case 4:
                 // Set Image
@@ -92,7 +92,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(4).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red400));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red500));
                 break;
             case 5:
                 // Set Image
@@ -102,7 +102,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 // Set Info
                 mainListViewHolder.txtMainItemInfo.setText(mainItemList.get(5).getInfo());
                 // Set CardView Background
-                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red500));
+                mainListViewHolder.cvMainItem.setCardBackgroundColor(mContext.getResources().getColor(R.color.red600));
                 break;
         }
     }
