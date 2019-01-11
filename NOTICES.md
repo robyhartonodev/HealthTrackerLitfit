@@ -22,6 +22,9 @@ https://www.freepik.com/
 
 7. Gender - https://www.freepik.com/
 
+8. Weight 2 - https://www.flaticon.com/free-icon/weighing-scale_1375383#term=weight&page=1&position=79
+https://www.freepik.com/
+
 DEPEDENCIES 
 
 1. Picasso
