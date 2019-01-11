@@ -20,6 +20,14 @@ https://www.flaticon.com/authors/pixel-buddha
 6. Plate - https://www.flaticon.com/free-icon/dinner_113227#term=plate&page=1&position=21
 https://www.freepik.com/
 
+7. Gender - https://www.freepik.com/
+
+8. Weight 2 - https://www.flaticon.com/free-icon/weighing-scale_1375383#term=weight&page=1&position=79
+https://www.freepik.com/
+
+9. Height - https://www.flaticon.com/free-icon/height_349410#term=height&page=1&position=3
+https://www.flaticon.com/authors/becris
+
 DEPEDENCIES 
 
 1. Picasso
