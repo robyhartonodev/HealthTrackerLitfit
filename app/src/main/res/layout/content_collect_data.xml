@@ -1,46 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Activity.CollectDataActivity"
     tools:showIn="@layout/activity_collect_data">
 
-    <androidx.cardview.widget.CardView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="8dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/edittext_name"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Personal information"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="32sp" />
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:inputType="textPersonName"
-                app:met_clearButton="true"
-                app:met_floatingLabel="highlight"
-                app:met_iconLeft="@drawable/ic_person"
-                app:met_primaryColor="@color/primaryColor" />
+                android:layout_marginBottom="32dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/edittext_birth"
-                android:layout_width="match_parent"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/materialedittext_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_person"
+                        app:met_primaryColor="@color/primaryColor" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/materialedittext_name"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/materialedittext_birth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:focusable="false"
+                            android:hint="Birth Date"
+                            app:met_floatingLabel="highlight"
+                            app:met_iconLeft="@drawable/ic_date"
+                            app:met_primaryColor="@color/primaryColor" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinner_gender"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_weight="40"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/edittext_name"
-                android:focusable="false"
-                android:hint="Birth Date"
-                app:met_floatingLabel="highlight"
-                app:met_iconLeft="@drawable/ic_date"
-                app:met_primaryColor="@color/primaryColor" />
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Physical information"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="32sp" />
 
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/materialedittext_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Weight in kg"
+                        android:inputType="numberDecimal"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_weighing"
+                        app:met_primaryColor="@color/primaryColor" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/materialedittext_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/materialedittext_weight"
+                        android:hint="Height in cm"
+                        android:inputType="numberDecimal"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconLeft="@drawable/ic_height"
+                        app:met_primaryColor="@color/primaryColor" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

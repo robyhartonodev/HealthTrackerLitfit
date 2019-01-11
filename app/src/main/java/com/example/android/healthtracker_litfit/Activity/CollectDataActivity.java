@@ -2,24 +2,34 @@ package com.example.android.healthtracker_litfit.Activity;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
+
+import com.codetroopers.betterpickers.calendardatepicker.CalendarDatePickerDialogFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import com.example.android.healthtracker_litfit.R;
+import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class CollectDataActivity extends AppCompatActivity {
+public class CollectDataActivity extends AppCompatActivity implements CalendarDatePickerDialogFragment.OnDateSetListener {
 
     private final Calendar myCalendar = Calendar.getInstance();
     private MaterialEditText mBirthEditText;
+    private MaterialSpinner mGenderSpinner;
+
+    private static final String FRAG_TAG_DATE_PICKER = "fragment_date_picker_name";
+    private String dateBirthString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,37 +47,46 @@ public class CollectDataActivity extends AppCompatActivity {
             }
         });
 
-        // Set Edit Text for Birth Date
-        mBirthEditText = findViewById(R.id.edittext_birth);
-        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
-                // TODO Auto-generated method stub
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                updateLabel();
-            }
-        };
+        // Set EditText for Birth Date
+        mBirthEditText = findViewById(R.id.materialedittext_birth);
 
+        // Set OnClickListener for the EditText
         mBirthEditText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(CollectDataActivity.this, date, myCalendar
-                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                CalendarDatePickerDialogFragment cdp = new CalendarDatePickerDialogFragment()
+                        .setOnDateSetListener(CollectDataActivity.this);
+                cdp.show(getSupportFragmentManager(), FRAG_TAG_DATE_PICKER);
+            }
+        });
+
+        // Set Spinner for Gender select
+        mGenderSpinner = findViewById(R.id.spinner_gender);
+        mGenderSpinner.setItems("Male", "Female");
+        mGenderSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
+
+            @Override
+            public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+                // Show Toast of selected gender
+                Toast.makeText(CollectDataActivity.this, item + " selected", Toast.LENGTH_SHORT).show();
+                // TODO Store selected gender in sharedpreference
             }
         });
     }
 
-    /**
-     * This method updates the text inside the birth edit text
-     */
-    private void updateLabel(){
-        String myFormat = "dd-MM-yy"; //In which you need put here
-        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.getDefault());
-
-        mBirthEditText.setText(sdf.format(myCalendar.getTime()));
+    @Override
+    public void onDateSet(CalendarDatePickerDialogFragment dialog, int year, int monthOfYear, int dayOfMonth) {
+        dateBirthString = dayOfMonth + "." + (monthOfYear + 1) + "." + year;
+        mBirthEditText.setText(dateBirthString);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        CalendarDatePickerDialogFragment calendarDatePickerDialogFragment = (CalendarDatePickerDialogFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAG_TAG_DATE_PICKER);
+        if (calendarDatePickerDialogFragment != null) {
+            calendarDatePickerDialogFragment.setOnDateSetListener(this);
+        }
+    }
 }
