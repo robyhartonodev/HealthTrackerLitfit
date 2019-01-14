@@ -28,6 +28,12 @@ https://www.freepik.com/
 9. Height - https://www.flaticon.com/free-icon/height_349410#term=height&page=1&position=3
 https://www.flaticon.com/authors/becris
 
+10. Goal - https://www.flaticon.com/free-icon/goal_806762#term=goal&page=1&position=8
+https://www.freepik.com/
+
+11. Hand holding a heart - https://www.flaticon.com/free-icon/hand-holding-a-heart_33073#term=heartbeat&page=1&position=67
+https://www.freepik.com/
+
 DEPEDENCIES 
 
 1. Picasso
