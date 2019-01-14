@@ -78,8 +78,11 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_goal" />
-                            <entry key="sourceFile" value="C:\Users\krappa\Downloads\goal.svg" />
+                            <entry key="height" value="144" />
+                            <entry key="outputName" value="splash" />
+                            <entry key="overrideSize" value="true" />
+                            <entry key="sourceFile" value="C:\Users\krappa\Downloads\hand-holding-a-heart.svg" />
+                            <entry key="width" value="144" />
                           </map>
                         </option>
                       </PersistentState>
