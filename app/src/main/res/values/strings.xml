@@ -4,9 +4,11 @@
     <string name="action_welcome">Welcome</string>
     <string name="main_image">main_image</string>
     <string name="title_activity_collect_data">CollectDataActivity</string>
-    
-    <string-array name="gender">
-        <item>male</item>
-        <item>female</item>
-    </string-array>
+    <string name="personal_information">Personal information</string>
+    <string name="edittext_collect_data">Name</string>
+    <string name="edittext_birth_date">Birth Date</string>
+    <string name="physical_information">Physical information</string>
+    <string name="edittext_weight">Weight in kg</string>
+    <string name="edittext_height">Height in cm</string>
+
 </resources>

@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     // Adapter
     private MainListAdapter mMainListAdapter;
 
+    //TODO Read SharedPreferences that contains info about the user and set it into the view
+    //TODO Use SharedPreferences to see if user has already put their info, if not then go to CollectDataActivity first
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
