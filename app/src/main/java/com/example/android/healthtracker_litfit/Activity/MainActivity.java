@@ -2,6 +2,8 @@ package com.example.android.healthtracker_litfit.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.android.healthtracker_litfit.Utils.SharedPreferencesVariable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +11,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.android.healthtracker_litfit.Adapter.MainListAdapter;
 import com.example.android.healthtracker_litfit.Model.MainItem;
@@ -46,12 +51,33 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Set SharedPreferences
+        SharedPreferencesVariable.userSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        // Clear SharedPreference (Debug)
+        // SharedPreferencesVariable.userSharedPreferences.edit().clear().apply();
+
+        // Check if user has already put their information
+        if (!SharedPreferencesVariable.userSharedPreferences.getBoolean(SharedPreferencesVariable.isDataColectedKey, false)) {
+            // Debug Toast
+            Toast.makeText(this,
+                    "test: " + SharedPreferencesVariable.userSharedPreferences.getBoolean(SharedPreferencesVariable.isDataColectedKey, false),
+                    Toast.LENGTH_SHORT).show();
+
+            // Go to CollectDataActivity First
+            Intent collectIntent = new Intent(MainActivity.this, CollectDataActivity.class);
+            startActivity(collectIntent);
+
+            // Terminate MainActivity
+            finish();
+        }
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 Intent testIntent = new Intent(MainActivity.this, CollectDataActivity.class);
-                 startActivity(testIntent);
+                Intent testIntent = new Intent(MainActivity.this, CollectDataActivity.class);
+                startActivity(testIntent);
             }
         });
 
