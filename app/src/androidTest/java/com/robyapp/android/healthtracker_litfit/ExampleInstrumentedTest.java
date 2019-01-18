@@ -1,4 +1,4 @@
-package com.example.android.healthtracker_litfit;
+package com.robyapp.android.healthtracker_litfit;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;

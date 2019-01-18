@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.android.healthtracker_litfit"
+        applicationId "com.robyapp.android.healthtracker_litfit"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
@@ -39,6 +39,8 @@ dependencies {
     implementation 'com.jaredrummler:material-spinner:1.3.1'
     implementation "com.mikepenz:materialdrawer:6.1.2"
 
+    implementation 'com.google.android.gms:play-services-fitness:16.0.1'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'

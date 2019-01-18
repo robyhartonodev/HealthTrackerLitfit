@@ -1,28 +1,23 @@
-package com.example.android.healthtracker_litfit.Activity;
+package com.robyapp.android.healthtracker_litfit.Activity;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.codetroopers.betterpickers.calendardatepicker.CalendarDatePickerDialogFragment;
-import com.example.android.healthtracker_litfit.Utils.SharedPreferencesVariable;
+import com.robyapp.android.healthtracker_litfit.Utils.SharedPreferencesVariable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.DatePicker;
 import android.widget.Toast;
 
-import com.example.android.healthtracker_litfit.R;
+import com.robyapp.android.healthtracker_litfit.R;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -112,8 +107,8 @@ public class CollectDataActivity extends AppCompatActivity implements CalendarDa
                     SharedPreferencesVariable.userSharedPreferences.edit()
                             .putString(SharedPreferencesVariable.userGender, genderString).apply();
 
-                    // Set isDataColected SharedPref to true
-                    // SharedPreferencesVariable.userSharedPreferences.edit().putBoolean(SharedPreferencesVariable.isDataColectedKey, true).apply();
+                    // Set isDataCollected SharedPref to true
+                    SharedPreferencesVariable.userSharedPreferences.edit().putBoolean(SharedPreferencesVariable.isDataColectedKey, true).apply();
 
                     // Terminate CollectDataActivity
                     finish();

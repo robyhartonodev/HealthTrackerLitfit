@@ -1,9 +1,9 @@
-package com.example.android.healthtracker_litfit.Activity;
+package com.robyapp.android.healthtracker_litfit.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.android.healthtracker_litfit.Utils.SharedPreferencesVariable;
+import com.robyapp.android.healthtracker_litfit.Utils.SharedPreferencesVariable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,9 +18,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.android.healthtracker_litfit.Adapter.MainListAdapter;
-import com.example.android.healthtracker_litfit.Model.MainItem;
-import com.example.android.healthtracker_litfit.R;
+import com.robyapp.android.healthtracker_litfit.Adapter.MainListAdapter;
+import com.robyapp.android.healthtracker_litfit.Model.MainItem;
+import com.robyapp.android.healthtracker_litfit.R;
 import com.stephentuso.welcome.WelcomeHelper;
 
 import java.util.ArrayList;
@@ -133,17 +133,18 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<MainItem> mainItemList = new ArrayList<>();
 
         // Create MainItem - Weight Object
-        MainItem weightItem = new MainItem("Weight", "Kg");
+        MainItem weightItem = new MainItem("Weight", SharedPreferencesVariable.userSharedPreferences
+                .getString(SharedPreferencesVariable.userWeight, "Kg") + " Kg");
         // Create MainItem - Calorie Burn Object
-        MainItem burnItem = new MainItem("Calorie Burn", "Cal");
+        MainItem burnItem = new MainItem("Calorie Burn", "- Cal");
         // Create MainItem - Calorie Intake Object
-        MainItem intakeItem = new MainItem("Calorie Intake", "Cal");
+        MainItem intakeItem = new MainItem("Calorie Intake", "- Cal");
         // Create MainItem - Water Intake Object
-        MainItem waterItem = new MainItem("Water Intake", "Cal");
+        MainItem waterItem = new MainItem("Water Intake", "- ml");
         // Create MainItem - Sleep Object
-        MainItem sleepItem = new MainItem("Sleep", "Duration");
+        MainItem sleepItem = new MainItem("Sleep", "- hours");
         // Create MainItem - Heartbeat Object
-        MainItem heartItem = new MainItem("Heartbeat", "bpm");
+        MainItem heartItem = new MainItem("Heartbeat", "- bpm");
 
         // Add the MainItem objects into the array list
         mainItemList.add(weightItem);

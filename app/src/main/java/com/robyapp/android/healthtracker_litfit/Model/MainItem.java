@@ -1,12 +1,15 @@
-package com.example.android.healthtracker_litfit.Model;
+package com.robyapp.android.healthtracker_litfit.Model;
 
+/**
+ * Data Model for MainListAdapter
+ */
 public class MainItem {
 
     private String Title;
     private String Info;
 
     // Constructor
-    public MainItem(String title, String info){
+    public MainItem(String title, String info) {
         this.Title = title;
         this.Info = info;
     }

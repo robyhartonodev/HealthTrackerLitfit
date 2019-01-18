@@ -1,10 +1,11 @@
-package com.example.android.healthtracker_litfit.Adapter;
+package com.robyapp.android.healthtracker_litfit.Adapter;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +13,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.healthtracker_litfit.Model.MainItem;
-import com.example.android.healthtracker_litfit.R;
+import com.robyapp.android.healthtracker_litfit.Activity.CalorieBurnActivity;
+import com.robyapp.android.healthtracker_litfit.Activity.MainActivity;
+import com.robyapp.android.healthtracker_litfit.Model.MainItem;
+import com.robyapp.android.healthtracker_litfit.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -143,6 +146,9 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 case 1:
                     // Debug Toast
                     Toast.makeText(mContext, pos + "clicked", Toast.LENGTH_SHORT).show();
+                    // Go To CalorieBurnActivity
+                    Intent calorieBurnIntent = new Intent(mContext, CalorieBurnActivity.class);
+                    mContext.startActivity(calorieBurnIntent);
                     break;
                 case 2:
                     // Debug Toast

@@ -1,4 +1,4 @@
-package com.example.android.healthtracker_litfit.Utils;
+package com.robyapp.android.healthtracker_litfit.Utils;
 
 import android.content.SharedPreferences;
 
@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
  * This class contains global variables for shared preferences that stores user's data (weight, height, name, etc.)
  */
 public class SharedPreferencesVariable {
-    // Shared Preferences that used for whole app
+    // Shared Preferences that used for the whole app
     public static SharedPreferences userSharedPreferences;
 
     // Key to check if user already put their data in

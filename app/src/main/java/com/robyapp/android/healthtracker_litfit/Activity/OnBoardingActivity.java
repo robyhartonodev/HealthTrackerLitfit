@@ -1,9 +1,8 @@
-package com.example.android.healthtracker_litfit.Activity;
+package com.robyapp.android.healthtracker_litfit.Activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.android.healthtracker_litfit.R;
+import com.robyapp.android.healthtracker_litfit.R;
 import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.TitlePage;
 import com.stephentuso.welcome.WelcomeActivity;
