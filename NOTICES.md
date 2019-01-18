@@ -40,3 +40,6 @@ DEPEDENCIES
 
 2. MaterialEditText - https://github.com/rengwuxian/MaterialEditText
 
+3. TapView - https://github.com/KeepSafe/TapTargetView
+https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE
+
