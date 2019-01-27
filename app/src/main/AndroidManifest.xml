@@ -52,6 +52,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.robyapp.android.healthtracker_litfit.Activity.MainActivity" />
         </activity>
+        <activity
+            android:name=".Activity.AddWeightActivity"
+            android:label="@string/title_activity_add_weight"
+            android:parentActivityName=".Activity.WeightActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.robyapp.android.healthtracker_litfit.Activity.WeightActivity" />
+        </activity>
     </application>
 
 </manifest>
