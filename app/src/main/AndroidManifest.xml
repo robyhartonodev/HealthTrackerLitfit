@@ -37,8 +37,21 @@
         <activity
             android:name=".Activity.CalorieBurnActivity"
             android:label="@string/title_activity_calorie_burn"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".Activity.MainActivity"/>
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.robyapp.android.healthtracker_litfit.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.WeightActivity"
+            android:label="@string/title_activity_weight"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.robyapp.android.healthtracker_litfit.Activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
