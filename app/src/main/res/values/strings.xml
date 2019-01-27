@@ -11,5 +11,9 @@
     <string name="edittext_weight">Weight in kg</string>
     <string name="edittext_height">Height in cm</string>
     <string name="title_activity_calorie_burn">CalorieBurnActivity</string>
+    <string name="title_activity_weight">WeightActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
