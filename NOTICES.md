@@ -34,9 +34,12 @@ https://www.freepik.com/
 11. Hand holding a heart - https://www.flaticon.com/free-icon/hand-holding-a-heart_33073#term=heartbeat&page=1&position=67
 https://www.freepik.com/
 
-DEPEDENCIES 
+DEPENDENCIES 
 
 1. Picasso
 
 2. MaterialEditText - https://github.com/rengwuxian/MaterialEditText
+
+3. TapView - https://github.com/KeepSafe/TapTargetView
+https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE
 
