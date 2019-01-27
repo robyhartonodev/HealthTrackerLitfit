@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.robyapp.android.healthtracker_litfit.Activity.CalorieBurnActivity;
 import com.robyapp.android.healthtracker_litfit.Activity.MainActivity;
+import com.robyapp.android.healthtracker_litfit.Activity.WeightActivity;
 import com.robyapp.android.healthtracker_litfit.Model.MainItem;
 import com.robyapp.android.healthtracker_litfit.R;
 import com.squareup.picasso.Picasso;
@@ -142,6 +143,9 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MainLi
                 case 0:
                     // Debug Toast
                     Toast.makeText(mContext, pos + "clicked", Toast.LENGTH_SHORT).show();
+                    // Go To WeightActivity
+                    Intent weightIntent = new Intent(mContext, WeightActivity.class);
+                    mContext.startActivity(weightIntent);
                     break;
                 case 1:
                     // Debug Toast
