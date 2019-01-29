@@ -1,5 +1,6 @@
 package com.robyapp.android.healthtracker_litfit.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -39,8 +40,10 @@ public class WeightActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                // Go To AddWeight Activity
+                Intent addWeightIntent = new Intent(WeightActivity.this, AddWeightActivity.class);
+                startActivity(addWeightIntent);
+
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
