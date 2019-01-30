@@ -43,3 +43,6 @@ DEPENDENCIES
 3. TapView - https://github.com/KeepSafe/TapTargetView
 https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE
 
+4. AndroidRulerPicker - https://github.com/kevalpatel2106/android-ruler-picker
+https://github.com/kevalpatel2106/android-ruler-picker/blob/master/LICENSE
+
